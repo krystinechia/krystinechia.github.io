@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic);
+
+@import "style.css" screen;
+@import "compass/css3"; 
+@import "compass/utilities";
+
+/* Font Variables */
+$base-font : "Roboto", sans-serif;
+$base-font-size : 16px;
+
+
+
+/*************************** DO NOT CHANGE ANYTHING FROM HERE ***************************/
+
+
+
+
+
+/*************************** DO NOT CHANGE ANYTHING FROM HERE ***************************/
+
+
+/*************************** Mixins ***************************/
+
+@mixin font-size($size, $is-important: false) {
+  $size: if(unitless($size), $size, $size / 1px);
+
+  @if $is-important {
+    font-size: $size + px !important;
+    font-size: ($size / strip-units($base-font-size)) + rem !important;
+  } @else {
+    font-size: $size + px;
+    font-size: ($size / strip-units($base-font-size)) + rem;
+  }
+}
+
+
+
+
+
+
+html > body {
+	width: 100%;
+	font: {
+		family: $base-font;
+		style: normal;
+		size: 16px;
+		size: 1.6rem;	
+	}
+	margin: 0;
+	line-height: 160%;
+	filter:normal;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.coming-soon {
+	@include font-size(60);
+	font-weight: 100;
+	width: 800px;
+	text-align: center;
+	margin: 250px 0;
+}
+
+
+
+
+
