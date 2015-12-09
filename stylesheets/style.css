@@ -6,6 +6,7 @@
 /*************************** Mixins ***************************/
 /* line 41, sass/style.scss */
 html > body {
+  background-color: #2c3e50;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -18,18 +19,19 @@ html > body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 56, sass/style.scss */
+/* line 57, sass/style.scss */
 .wrapper {
   width: 800px;
   margin: 0 auto;
 }
 
-/* line 61, sass/style.scss */
+/* line 62, sass/style.scss */
 .coming-soon {
   font-size: 60px;
   font-size: 60/strip-units(16px)rem;
   font-weight: 100;
-  width: 800px;
+  color: #FFF;
+  width: 100%;
   text-align: center;
-  margin: 250px 0;
+  padding: 35% 0;
 }

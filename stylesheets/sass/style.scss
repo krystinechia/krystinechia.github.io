@@ -39,6 +39,7 @@ $base-font-size : 16px;
 
 
 html > body {
+	background-color: #2c3e50;
 	width: 100%;
 	font: {
 		family: $base-font;
@@ -61,9 +62,10 @@ html > body {
 .coming-soon {
 	@include font-size(60);
 	font-weight: 100;
-	width: 800px;
+	color: #FFF;
+	width: 100%;
 	text-align: center;
-	margin: 250px 0;
+	padding: 35% 0;
 }
 
 
