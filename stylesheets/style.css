@@ -571,7 +571,7 @@ p {
 
 /* line 503, sass/style.scss */
 .resume {
-  padding: 30px 20px 60px 20px;
+  padding: 30px 20px 0 20px;
   width: auto;
 }
 @media screen and (min-width: 480px) {
