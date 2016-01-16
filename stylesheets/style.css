@@ -466,90 +466,95 @@ p {
   color: #527394;
 }
 
-/* line 412, sass/style.scss */
+/* line 413, sass/style.scss */
+.btn a {
+  text-decoration: none;
+}
+
+/* line 418, sass/style.scss */
 .about {
   text-align: center;
   padding: 50px 20px 0 20px;
 }
 @media screen and (min-width: 480px) {
-  /* line 412, sass/style.scss */
+  /* line 418, sass/style.scss */
   .about {
     padding: 4.36681% 20px 4.36681% 20px;
   }
 }
-/* line 420, sass/style.scss */
+/* line 426, sass/style.scss */
 .about h3 {
   margin-top: -10px;
 }
-/* line 424, sass/style.scss */
+/* line 430, sass/style.scss */
 .about img {
   width: 150px;
 }
 
-/* line 429, sass/style.scss */
+/* line 435, sass/style.scss */
 .community-bg {
   background: #58c3cb;
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
-/* line 435, sass/style.scss */
+/* line 441, sass/style.scss */
 .coaching-bg {
   background: #34495e;
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
-/* line 441, sass/style.scss */
+/* line 447, sass/style.scss */
 .landing-bg {
   background: #95a5a6;
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
-/* line 447, sass/style.scss */
+/* line 453, sass/style.scss */
 .container-projects {
   width: auto;
   padding: 0 20px 0 20px;
 }
-/* line 451, sass/style.scss */
+/* line 457, sass/style.scss */
 .container-projects a {
   text-decoration: none;
 }
-/* line 455, sass/style.scss */
+/* line 461, sass/style.scss */
 .container-projects img {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding-top: 100px;
 }
-/* line 462, sass/style.scss */
+/* line 468, sass/style.scss */
 .container-projects h1 {
   margin: 0;
   text-align: center;
   color: #FFF;
   font-weight: 300;
 }
-/* line 469, sass/style.scss */
+/* line 475, sass/style.scss */
 .container-projects p {
   color: #FFF;
   font-weight: 400;
 }
 @media screen and (min-width: 480px) {
-  /* line 447, sass/style.scss */
+  /* line 453, sass/style.scss */
   .container-projects {
     width: 480px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 447, sass/style.scss */
+  /* line 453, sass/style.scss */
   .container-projects {
     width: 600px;
   }
 }
 
-/* line 484, sass/style.scss */
+/* line 490, sass/style.scss */
 .line {
   width: 100px;
   border-bottom: 1px solid #FFF;
@@ -557,100 +562,100 @@ p {
   padding-top: 40px;
 }
 
-/* line 491, sass/style.scss */
+/* line 497, sass/style.scss */
 .dark-line {
   width: 50px;
   border-bottom: 1px solid #2c3e50;
   margin: -10px 0 10px;
 }
 
-/* line 497, sass/style.scss */
+/* line 503, sass/style.scss */
 .resume {
   padding: 30px 20px 60px 20px;
   width: auto;
 }
 @media screen and (min-width: 480px) {
-  /* line 497, sass/style.scss */
+  /* line 503, sass/style.scss */
   .resume {
     width: 600px;
-    padding: 30px 0 80px;
+    padding: 30px 0 20px;
     margin: 0 auto;
   }
 }
-/* line 508, sass/style.scss */
+/* line 514, sass/style.scss */
 .resume .experience h1 {
   padding-bottom: 0;
   margin-bottom: -10px;
 }
-/* line 513, sass/style.scss */
+/* line 519, sass/style.scss */
 .resume .experience h3 {
   color: #2c3e50;
 }
-/* line 517, sass/style.scss */
+/* line 523, sass/style.scss */
 .resume .experience h4 {
   padding-top: 30px;
   margin-bottom: -5px;
 }
-/* line 522, sass/style.scss */
+/* line 528, sass/style.scss */
 .resume .experience p {
   padding: 0;
   margin: 10px 0 0 0;
 }
-/* line 529, sass/style.scss */
+/* line 535, sass/style.scss */
 .resume .languages h1 {
   margin-top: 60px;
 }
-/* line 533, sass/style.scss */
+/* line 539, sass/style.scss */
 .resume .languages h3 {
   margin: 0;
   padding: 0;
 }
-/* line 538, sass/style.scss */
+/* line 544, sass/style.scss */
 .resume .languages p {
   margin: 0;
   padding: 0 0 20px;
 }
-/* line 545, sass/style.scss */
+/* line 551, sass/style.scss */
 .resume .awards h1 {
   padding-bottom: 0;
   margin: 40px 0 -10px;
 }
-/* line 550, sass/style.scss */
+/* line 556, sass/style.scss */
 .resume .awards h4 {
   padding-top: 30px;
   margin-bottom: -5px;
 }
-/* line 555, sass/style.scss */
+/* line 561, sass/style.scss */
 .resume .awards p {
   margin: 0;
   padding: 0;
 }
-/* line 562, sass/style.scss */
+/* line 568, sass/style.scss */
 .resume .education h1 {
   padding-bottom: 0;
   margin: 60px 0 -10px;
 }
-/* line 567, sass/style.scss */
+/* line 573, sass/style.scss */
 .resume .education h3 {
   color: #2c3e50;
   display: block;
 }
-/* line 572, sass/style.scss */
+/* line 578, sass/style.scss */
 .resume .education h4 {
   padding-top: 30px;
   margin-bottom: -5px;
 }
-/* line 577, sass/style.scss */
+/* line 583, sass/style.scss */
 .resume .education p {
   padding: 0;
   margin: 10px 0 -10px 0;
 }
-/* line 584, sass/style.scss */
+/* line 590, sass/style.scss */
 .resume .interests h1 {
   padding-bottom: 0;
   margin: 60px 0 30px;
 }
-/* line 589, sass/style.scss */
+/* line 595, sass/style.scss */
 .resume .interests li {
   font-size: 16px;
   font-size: 16/strip-units(16px)rem;
@@ -659,7 +664,7 @@ p {
   color: #2c3e50;
 }
 @media screen and (min-width: 980px) {
-  /* line 589, sass/style.scss */
+  /* line 595, sass/style.scss */
   .resume .interests li {
     font-size: 20px;
     font-size: 20/strip-units(16px)rem;
