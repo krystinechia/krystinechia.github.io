@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,100italic,300italic);
 
 @import "style.css" screen;
 @import "compass/css3"; 
@@ -39,7 +39,7 @@ $base-font-size : 16px;
 
 
 html > body {
-	background-color: #2c3e50;
+	background-color: #fafafa;
 	width: 100%;
 	font: {
 		family: $base-font;
@@ -54,9 +54,78 @@ html > body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+span {
+	display: block;
+}
+
+h1 {
+	@include font-size (28);
+	line-height: 32px;
+	font-weight: 100;
+	color: #2c3e50;
+
+		@media screen and (min-width: 768px) {
+			@include font-size(34);
+			line-height: 36px;
+		}
+
+		@media screen and (min-width: 980px) {
+			@include font-size(38);
+			line-height: 40px;
+		}
+}
+
+h2 {
+	@include font-size(18);
+	line-height: 30px;
+	font-weight: 300;
+	color: #FFF;
+
+		@media screen and (min-width: 768px) {
+			@include font-size(26);
+			line-height: 32px;
+		}
+
+		@media screen and (min-width: 980px) {
+			@include font-size(28);
+			line-height: 36px;
+		}
+
+}
+
+h3 {
+	@include font-size(16);
+	line-height: 24px !important;
+	font-weight: 300;
+	color: #2c3e50;
+
+		@media screen and (min-width: 980px) {
+			@include font-size(20);
+			line-height: 28px;
+		}
+}
+
+h4 {
+	@include font-size(14);
+	line-height: 20px;
+	font-weight: 300;
+	color: #2c3e50;
+}
+
+p {
+	@include font-size(16);
+	line-height: 24px;
+	font-weight: 300;
+	color: #2c3e50;
+
+		@media screen and (min-width: 980px) {
+			@include font-size(20);
+			line-height: 28px;
+		}
+}
+
 .wrapper {
-	width: 800px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .coming-soon {
@@ -68,7 +137,461 @@ html > body {
 	padding: 35% 0;
 }
 
+.header {
+	height: 125px;
+	background: #FFF;
+	border-bottom: 1px #ebebeb solid;
 
+		@media screen and (min-width: 480px) {
+			height: 130px;
+		}
+}
 
+.header-nav {
+	width: 315px;
+	margin: 0 auto;
 
+		@media screen and (min-width: 480px) {
+			width: 450px;
+		}
 
+	ul {
+		display: flex;
+    	padding-left: 0;
+    	margin: 10px auto;
+
+		li {
+			display: inline;
+			@include font-size(12);
+			margin: 0 auto;
+			padding: 0 20px 0 20px;
+
+				@media screen and (min-width: 480px) {
+					padding: 0 30px 0 30px;
+					@include font-size(14);
+				}
+
+			a {
+				text-decoration: none;
+				color: #8a8a8a;
+				font-weight: 400;
+			}
+
+			a:hover {
+				text-decoration: underline;
+				color: #34495e;
+			}
+		}
+	}
+	
+	img.header-logo {
+		position: relative;
+	    display: block;
+	    margin: 0 auto;
+	    padding: 20px 0 0 0;
+	    width: 60%;
+
+	    	@media screen and (min-width: 480px) {
+	    		width: 200px;
+	    		padding: 25px 0 0 0;
+	    	}
+	}
+
+}
+
+.center {
+	@media screen and (min-width: 980px) {
+		width: 980px;
+		margin: 0 auto;
+	}
+}
+
+.intro {
+	text-align: center;
+	padding: percentage(10/229) 20px percentage(10/229) 20px;
+
+	h3 {
+		margin-top: -10px;
+	}
+}
+
+.viewbtn {
+
+	@media screen and (max-width: 480px) {
+		margin: 0 auto;
+	}
+
+	@include font-size(22);
+	color: #FFF;
+	width: 220px;
+	height: 47px;
+	border: 2px solid #FFF;
+	text-align: center;
+	font-variant: small-caps;
+	vertical-align: middle;
+	margin-top: 30px;
+	@include transition(all 0.3s);
+	@include box-sizing(border-box);
+	&:hover {
+		text-decoration:none;
+		background: #FFF;
+		color: #2c3e50;
+	}
+}
+
+.viewbtn-projects {
+	@include font-size(22);
+	color: #FFF;
+	width: 220px;
+	height: 47px;
+	border: 2px solid #FFF;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+	text-decoration: none !important;
+	display: block;
+	margin: 100px auto 60px;
+	@include transition(all 0.3s);
+	@include box-sizing(border-box);
+	&:hover {
+		text-decoration:none !important;
+		background: #FFF;
+		color: #2c3e50;
+	}
+}
+
+.viewbtn-about {
+	@include font-size(22);
+	color: #2c3e50;
+	width: 220px;
+	height: 47px;
+	border: 2px solid #2c3e50;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+	text-decoration: none !important;
+	display: block;
+	margin: 60px auto;
+	@include transition(all 0.3s);
+	@include box-sizing(border-box);
+	&:hover {
+		text-decoration:none !important;
+		background: #2c3e50;
+		color: #FFF;
+	}
+}
+
+.bold {
+	font-weight: 400;
+	display: inline;
+}
+
+.nomargin {
+	margin: 0 !important;
+}
+
+.about {
+
+	a {
+		text-decoration: none;
+	}
+
+	p {
+		text-align: center;
+	}
+
+}
+
+.project {
+	width: 100%;
+	height: auto;
+	padding: 17% 0 17% 0;
+
+	img {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 768px){
+		padding: 9% 0 0 0;
+		height: 260px;
+	}
+
+	@media screen and (min-width: 980px){
+		padding: 6% 0 0 0;
+		height: 340px;
+	}
+}
+
+.community-platform {
+	background: #58c3cb;
+}
+
+.coaching-app {
+	background: #34495e;
+}
+
+.landing-page {
+	background: #95a5a6;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+
+	@media screen and (min-width: 980px) {
+		width: 980px;
+	}
+}
+
+.col-left {
+	width: 100%;
+	padding: 0 20px 0 20px;
+	@include box-sizing(border-box);
+
+	@media screen and (min-width: 480px) {
+    	width: 50%;
+    	float: left;
+    	padding: 0 20px 0 40px;
+    }
+}
+
+.col-right {
+	width: 100%;
+	@include box-sizing(border-box);
+	padding: 0 20px 0 20px;
+
+	h2 {
+		text-align: center;
+	}
+
+    a {
+    	text-decoration: none;
+    }
+
+    @media screen and (min-width: 480px) {
+    	width: 50%;
+    	display: inline-block;
+    	padding: 0 40px 0 20px;
+
+    	h2 {
+    		text-align: left;
+    	}
+    }
+
+    @media screen and (min-width: 980px) {
+    	h2 {
+    		padding-top: 30px;
+    	}
+    }
+}
+
+.contact {
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	padding: 30px 0 30px;
+
+	@media screen and (min-width: 480px) {
+		width: 100%;
+	}
+
+	h3 {
+		line-height: 30px !important;
+		margin-top: -10px;
+
+		a {
+			color: #2c3e50;
+		}
+
+		a:hover {
+			color: #527394;
+		}
+	}
+}
+
+.about {
+	text-align: center;
+	padding: 50px 20px 0 20px;
+
+	@media screen and (min-width: 480px) {
+		padding: percentage(10/229) 20px percentage(10/229) 20px;
+	}
+
+	h3 {
+		margin-top: -10px;
+	}
+
+	img {
+		width: 150px;
+	}
+}
+
+.community-bg {
+	background: #58c3cb;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.coaching-bg {
+	background: #34495e;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.landing-bg {
+	background: #95a5a6;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.container-projects {
+	width: 275px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+
+	a {
+		text-decoration: none;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+
+	h1 {
+		margin: 0;
+		text-align: center;
+		color: #FFF;
+		font-weight: 300;
+	}
+
+	p {
+		color: #FFF;
+		font-weight: 400;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 600px;
+	}
+}
+
+.line {
+	width: 100px;
+	border-bottom: 1px solid #FFF;
+	margin: 5px auto 40px;
+	padding-top: 40px;
+}
+
+.dark-line {
+	width: 50px;
+	border-bottom: 1px solid #2c3e50;
+	margin: -10px 0 10px;
+}
+
+.resume {
+	padding: 30px 20px 60px 20px;
+	width: 275px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 480px) {
+		width: 600px;
+		padding: 30px 0 80px;
+	}
+
+	.experience {
+		h1 {
+			padding-bottom: 0;
+			margin-bottom: -10px;
+		}
+
+		h3 {
+			color: #2c3e50;
+		}
+
+		h4 {
+			padding-top: 30px;
+			margin-bottom: -5px;
+		}
+
+		p {
+			padding: 0;
+			margin: 10px 0 0 0;
+		}
+	}
+
+	.languages {
+		h1 {
+			margin-top: 60px;
+		}
+
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			margin: 0;
+			padding: 0 0 20px;
+		}
+	}
+
+	.awards {
+		h1 {
+			padding-bottom: 0;
+			margin: 40px 0 -10px;
+		}
+
+		h4 {
+			padding-top: 30px;
+			margin-bottom: -5px;
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.education {
+		h1 {
+			padding-bottom: 0;
+			margin: 60px 0 -10px;
+		}
+
+		h3 {
+			color: #2c3e50;
+			display: block;
+		}
+
+		h4 {
+			padding-top: 30px;
+			margin-bottom: -5px;
+		}
+
+		p {
+			padding: 0;
+			margin: 10px 0 -10px 0;
+		}
+	}
+
+	.interests {
+		h1 {
+			padding-bottom: 0;
+			margin: 60px 0 30px;
+		}
+
+		li {
+			@include font-size(16);
+			line-height: 24px;
+			font-weight: 300;
+			color: #2c3e50;
+
+			@media screen and (min-width: 980px) {
+				@include font-size(20);
+				line-height: 28px;
+			}
+		}
+	}
+}

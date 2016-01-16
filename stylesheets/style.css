@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,100italic,300italic);
 @import "style.css" screen;
 /* Font Variables */
 /*************************** DO NOT CHANGE ANYTHING FROM HERE ***************************/
@@ -6,7 +6,7 @@
 /*************************** Mixins ***************************/
 /* line 41, sass/style.scss */
 html > body {
-  background-color: #2c3e50;
+  background-color: #fafafa;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -20,12 +20,109 @@ html > body {
 }
 
 /* line 57, sass/style.scss */
-.wrapper {
-  width: 800px;
-  margin: 0 auto;
+span {
+  display: block;
 }
 
-/* line 62, sass/style.scss */
+/* line 61, sass/style.scss */
+h1 {
+  font-size: 28px;
+  font-size: 28/strip-units(16px)rem;
+  line-height: 32px;
+  font-weight: 100;
+  color: #2c3e50;
+}
+@media screen and (min-width: 768px) {
+  /* line 61, sass/style.scss */
+  h1 {
+    font-size: 34px;
+    font-size: 34/strip-units(16px)rem;
+    line-height: 36px;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 61, sass/style.scss */
+  h1 {
+    font-size: 38px;
+    font-size: 38/strip-units(16px)rem;
+    line-height: 40px;
+  }
+}
+
+/* line 78, sass/style.scss */
+h2 {
+  font-size: 18px;
+  font-size: 18/strip-units(16px)rem;
+  line-height: 30px;
+  font-weight: 300;
+  color: #FFF;
+}
+@media screen and (min-width: 768px) {
+  /* line 78, sass/style.scss */
+  h2 {
+    font-size: 26px;
+    font-size: 26/strip-units(16px)rem;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 78, sass/style.scss */
+  h2 {
+    font-size: 28px;
+    font-size: 28/strip-units(16px)rem;
+    line-height: 36px;
+  }
+}
+
+/* line 96, sass/style.scss */
+h3 {
+  font-size: 16px;
+  font-size: 16/strip-units(16px)rem;
+  line-height: 24px !important;
+  font-weight: 300;
+  color: #2c3e50;
+}
+@media screen and (min-width: 980px) {
+  /* line 96, sass/style.scss */
+  h3 {
+    font-size: 20px;
+    font-size: 20/strip-units(16px)rem;
+    line-height: 28px;
+  }
+}
+
+/* line 108, sass/style.scss */
+h4 {
+  font-size: 14px;
+  font-size: 14/strip-units(16px)rem;
+  line-height: 20px;
+  font-weight: 300;
+  color: #2c3e50;
+}
+
+/* line 115, sass/style.scss */
+p {
+  font-size: 16px;
+  font-size: 16/strip-units(16px)rem;
+  line-height: 24px;
+  font-weight: 300;
+  color: #2c3e50;
+}
+@media screen and (min-width: 980px) {
+  /* line 115, sass/style.scss */
+  p {
+    font-size: 20px;
+    font-size: 20/strip-units(16px)rem;
+    line-height: 28px;
+  }
+}
+
+/* line 127, sass/style.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 131, sass/style.scss */
 .coming-soon {
   font-size: 60px;
   font-size: 60/strip-units(16px)rem;
@@ -34,4 +131,532 @@ html > body {
   width: 100%;
   text-align: center;
   padding: 35% 0;
+}
+
+/* line 140, sass/style.scss */
+.header {
+  height: 125px;
+  background: #FFF;
+  border-bottom: 1px #ebebeb solid;
+}
+@media screen and (min-width: 480px) {
+  /* line 140, sass/style.scss */
+  .header {
+    height: 130px;
+  }
+}
+
+/* line 150, sass/style.scss */
+.header-nav {
+  width: 315px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  /* line 150, sass/style.scss */
+  .header-nav {
+    width: 450px;
+  }
+}
+/* line 158, sass/style.scss */
+.header-nav ul {
+  display: flex;
+  padding-left: 0;
+  margin: 10px auto;
+}
+/* line 163, sass/style.scss */
+.header-nav ul li {
+  display: inline;
+  font-size: 12px;
+  font-size: 12/strip-units(16px)rem;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+@media screen and (min-width: 480px) {
+  /* line 163, sass/style.scss */
+  .header-nav ul li {
+    padding: 0 30px 0 30px;
+    font-size: 14px;
+    font-size: 14/strip-units(16px)rem;
+  }
+}
+/* line 174, sass/style.scss */
+.header-nav ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-weight: 400;
+}
+/* line 180, sass/style.scss */
+.header-nav ul li a:hover {
+  text-decoration: underline;
+  color: #34495e;
+}
+/* line 187, sass/style.scss */
+.header-nav img.header-logo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 60%;
+}
+@media screen and (min-width: 480px) {
+  /* line 187, sass/style.scss */
+  .header-nav img.header-logo {
+    width: 200px;
+    padding: 25px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  /* line 202, sass/style.scss */
+  .center {
+    width: 980px;
+    margin: 0 auto;
+  }
+}
+
+/* line 209, sass/style.scss */
+.intro {
+  text-align: center;
+  padding: 4.36681% 20px 4.36681% 20px;
+}
+/* line 213, sass/style.scss */
+.intro h3 {
+  margin-top: -10px;
+}
+
+/* line 218, sass/style.scss */
+.viewbtn {
+  font-size: 22px;
+  font-size: 22/strip-units(16px)rem;
+  color: #FFF;
+  width: 220px;
+  height: 47px;
+  border: 2px solid #FFF;
+  text-align: center;
+  font-variant: small-caps;
+  vertical-align: middle;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  /* line 218, sass/style.scss */
+  .viewbtn {
+    margin: 0 auto;
+  }
+}
+/* line 235, sass/style.scss */
+.viewbtn:hover {
+  text-decoration: none;
+  background: #FFF;
+  color: #2c3e50;
+}
+
+/* line 242, sass/style.scss */
+.viewbtn-projects {
+  font-size: 22px;
+  font-size: 22/strip-units(16px)rem;
+  color: #FFF;
+  width: 220px;
+  height: 47px;
+  border: 2px solid #FFF;
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 30px;
+  text-decoration: none !important;
+  display: block;
+  margin: 100px auto 60px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 256, sass/style.scss */
+.viewbtn-projects:hover {
+  text-decoration: none !important;
+  background: #FFF;
+  color: #2c3e50;
+}
+
+/* line 263, sass/style.scss */
+.viewbtn-about {
+  font-size: 22px;
+  font-size: 22/strip-units(16px)rem;
+  color: #2c3e50;
+  width: 220px;
+  height: 47px;
+  border: 2px solid #2c3e50;
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 30px;
+  text-decoration: none !important;
+  display: block;
+  margin: 60px auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 277, sass/style.scss */
+.viewbtn-about:hover {
+  text-decoration: none !important;
+  background: #2c3e50;
+  color: #FFF;
+}
+
+/* line 284, sass/style.scss */
+.bold {
+  font-weight: 400;
+  display: inline;
+}
+
+/* line 289, sass/style.scss */
+.nomargin {
+  margin: 0 !important;
+}
+
+/* line 295, sass/style.scss */
+.about a {
+  text-decoration: none;
+}
+/* line 299, sass/style.scss */
+.about p {
+  text-align: center;
+}
+
+/* line 305, sass/style.scss */
+.project {
+  width: 100%;
+  height: auto;
+  padding: 17% 0 17% 0;
+}
+/* line 310, sass/style.scss */
+.project img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  /* line 305, sass/style.scss */
+  .project {
+    padding: 9% 0 0 0;
+    height: 260px;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 305, sass/style.scss */
+  .project {
+    padding: 6% 0 0 0;
+    height: 340px;
+  }
+}
+
+/* line 325, sass/style.scss */
+.community-platform {
+  background: #58c3cb;
+}
+
+/* line 329, sass/style.scss */
+.coaching-app {
+  background: #34495e;
+}
+
+/* line 333, sass/style.scss */
+.landing-page {
+  background: #95a5a6;
+}
+
+/* line 337, sass/style.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 980px) {
+  /* line 337, sass/style.scss */
+  .container {
+    width: 980px;
+  }
+}
+
+/* line 346, sass/style.scss */
+.col-left {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 480px) {
+  /* line 346, sass/style.scss */
+  .col-left {
+    width: 50%;
+    float: left;
+    padding: 0 20px 0 40px;
+  }
+}
+
+/* line 358, sass/style.scss */
+.col-right {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+}
+/* line 363, sass/style.scss */
+.col-right h2 {
+  text-align: center;
+}
+/* line 367, sass/style.scss */
+.col-right a {
+  text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  /* line 358, sass/style.scss */
+  .col-right {
+    width: 50%;
+    display: inline-block;
+    padding: 0 40px 0 20px;
+  }
+  /* line 376, sass/style.scss */
+  .col-right h2 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 382, sass/style.scss */
+  .col-right h2 {
+    padding-top: 30px;
+  }
+}
+
+/* line 388, sass/style.scss */
+.contact {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+}
+@media screen and (min-width: 480px) {
+  /* line 388, sass/style.scss */
+  .contact {
+    width: 100%;
+  }
+}
+/* line 398, sass/style.scss */
+.contact h3 {
+  line-height: 30px !important;
+  margin-top: -10px;
+}
+/* line 402, sass/style.scss */
+.contact h3 a {
+  color: #2c3e50;
+}
+/* line 406, sass/style.scss */
+.contact h3 a:hover {
+  color: #527394;
+}
+
+/* line 412, sass/style.scss */
+.about {
+  text-align: center;
+  padding: 50px 20px 0 20px;
+}
+@media screen and (min-width: 480px) {
+  /* line 412, sass/style.scss */
+  .about {
+    padding: 4.36681% 20px 4.36681% 20px;
+  }
+}
+/* line 420, sass/style.scss */
+.about h3 {
+  margin-top: -10px;
+}
+/* line 424, sass/style.scss */
+.about img {
+  width: 150px;
+}
+
+/* line 429, sass/style.scss */
+.community-bg {
+  background: #58c3cb;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* line 435, sass/style.scss */
+.coaching-bg {
+  background: #34495e;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* line 441, sass/style.scss */
+.landing-bg {
+  background: #95a5a6;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* line 447, sass/style.scss */
+.container-projects {
+  width: 275px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+/* line 452, sass/style.scss */
+.container-projects a {
+  text-decoration: none;
+}
+/* line 456, sass/style.scss */
+.container-projects img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+/* line 463, sass/style.scss */
+.container-projects h1 {
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+  font-weight: 300;
+}
+/* line 470, sass/style.scss */
+.container-projects p {
+  color: #FFF;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  /* line 447, sass/style.scss */
+  .container-projects {
+    width: 600px;
+  }
+}
+
+/* line 480, sass/style.scss */
+.line {
+  width: 100px;
+  border-bottom: 1px solid #FFF;
+  margin: 5px auto 40px;
+  padding-top: 40px;
+}
+
+/* line 487, sass/style.scss */
+.dark-line {
+  width: 50px;
+  border-bottom: 1px solid #2c3e50;
+  margin: -10px 0 10px;
+}
+
+/* line 493, sass/style.scss */
+.resume {
+  padding: 30px 20px 60px 20px;
+  width: 275px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  /* line 493, sass/style.scss */
+  .resume {
+    width: 600px;
+    padding: 30px 0 80px;
+  }
+}
+/* line 504, sass/style.scss */
+.resume .experience h1 {
+  padding-bottom: 0;
+  margin-bottom: -10px;
+}
+/* line 509, sass/style.scss */
+.resume .experience h3 {
+  color: #2c3e50;
+}
+/* line 513, sass/style.scss */
+.resume .experience h4 {
+  padding-top: 30px;
+  margin-bottom: -5px;
+}
+/* line 518, sass/style.scss */
+.resume .experience p {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+/* line 525, sass/style.scss */
+.resume .languages h1 {
+  margin-top: 60px;
+}
+/* line 529, sass/style.scss */
+.resume .languages h3 {
+  margin: 0;
+  padding: 0;
+}
+/* line 534, sass/style.scss */
+.resume .languages p {
+  margin: 0;
+  padding: 0 0 20px;
+}
+/* line 541, sass/style.scss */
+.resume .awards h1 {
+  padding-bottom: 0;
+  margin: 40px 0 -10px;
+}
+/* line 546, sass/style.scss */
+.resume .awards h4 {
+  padding-top: 30px;
+  margin-bottom: -5px;
+}
+/* line 551, sass/style.scss */
+.resume .awards p {
+  margin: 0;
+  padding: 0;
+}
+/* line 558, sass/style.scss */
+.resume .education h1 {
+  padding-bottom: 0;
+  margin: 60px 0 -10px;
+}
+/* line 563, sass/style.scss */
+.resume .education h3 {
+  color: #2c3e50;
+  display: block;
+}
+/* line 568, sass/style.scss */
+.resume .education h4 {
+  padding-top: 30px;
+  margin-bottom: -5px;
+}
+/* line 573, sass/style.scss */
+.resume .education p {
+  padding: 0;
+  margin: 10px 0 -10px 0;
+}
+/* line 580, sass/style.scss */
+.resume .interests h1 {
+  padding-bottom: 0;
+  margin: 60px 0 30px;
+}
+/* line 585, sass/style.scss */
+.resume .interests li {
+  font-size: 16px;
+  font-size: 16/strip-units(16px)rem;
+  line-height: 24px;
+  font-weight: 300;
+  color: #2c3e50;
+}
+@media screen and (min-width: 980px) {
+  /* line 585, sass/style.scss */
+  .resume .interests li {
+    font-size: 20px;
+    font-size: 20/strip-units(16px)rem;
+    line-height: 28px;
+  }
 }
