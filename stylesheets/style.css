@@ -509,32 +509,38 @@ p {
 
 /* line 447, sass/style.scss */
 .container-projects {
-  width: 275px;
-  margin: 0 auto;
+  width: auto;
   padding: 0 20px 0 20px;
 }
-/* line 452, sass/style.scss */
+/* line 451, sass/style.scss */
 .container-projects a {
   text-decoration: none;
 }
-/* line 456, sass/style.scss */
+/* line 455, sass/style.scss */
 .container-projects img {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding-top: 100px;
 }
-/* line 463, sass/style.scss */
+/* line 462, sass/style.scss */
 .container-projects h1 {
   margin: 0;
   text-align: center;
   color: #FFF;
   font-weight: 300;
 }
-/* line 470, sass/style.scss */
+/* line 469, sass/style.scss */
 .container-projects p {
   color: #FFF;
   font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+  /* line 447, sass/style.scss */
+  .container-projects {
+    width: 480px;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 768px) {
   /* line 447, sass/style.scss */
@@ -543,7 +549,7 @@ p {
   }
 }
 
-/* line 480, sass/style.scss */
+/* line 484, sass/style.scss */
 .line {
   width: 100px;
   border-bottom: 1px solid #FFF;
@@ -551,100 +557,100 @@ p {
   padding-top: 40px;
 }
 
-/* line 487, sass/style.scss */
+/* line 491, sass/style.scss */
 .dark-line {
   width: 50px;
   border-bottom: 1px solid #2c3e50;
   margin: -10px 0 10px;
 }
 
-/* line 493, sass/style.scss */
+/* line 497, sass/style.scss */
 .resume {
   padding: 30px 20px 60px 20px;
-  width: 275px;
-  margin: 0 auto;
+  width: auto;
 }
 @media screen and (min-width: 480px) {
-  /* line 493, sass/style.scss */
+  /* line 497, sass/style.scss */
   .resume {
     width: 600px;
     padding: 30px 0 80px;
+    margin: 0 auto;
   }
 }
-/* line 504, sass/style.scss */
+/* line 508, sass/style.scss */
 .resume .experience h1 {
   padding-bottom: 0;
   margin-bottom: -10px;
 }
-/* line 509, sass/style.scss */
+/* line 513, sass/style.scss */
 .resume .experience h3 {
   color: #2c3e50;
 }
-/* line 513, sass/style.scss */
+/* line 517, sass/style.scss */
 .resume .experience h4 {
   padding-top: 30px;
   margin-bottom: -5px;
 }
-/* line 518, sass/style.scss */
+/* line 522, sass/style.scss */
 .resume .experience p {
   padding: 0;
   margin: 10px 0 0 0;
 }
-/* line 525, sass/style.scss */
+/* line 529, sass/style.scss */
 .resume .languages h1 {
   margin-top: 60px;
 }
-/* line 529, sass/style.scss */
+/* line 533, sass/style.scss */
 .resume .languages h3 {
   margin: 0;
   padding: 0;
 }
-/* line 534, sass/style.scss */
+/* line 538, sass/style.scss */
 .resume .languages p {
   margin: 0;
   padding: 0 0 20px;
 }
-/* line 541, sass/style.scss */
+/* line 545, sass/style.scss */
 .resume .awards h1 {
   padding-bottom: 0;
   margin: 40px 0 -10px;
 }
-/* line 546, sass/style.scss */
+/* line 550, sass/style.scss */
 .resume .awards h4 {
   padding-top: 30px;
   margin-bottom: -5px;
 }
-/* line 551, sass/style.scss */
+/* line 555, sass/style.scss */
 .resume .awards p {
   margin: 0;
   padding: 0;
 }
-/* line 558, sass/style.scss */
+/* line 562, sass/style.scss */
 .resume .education h1 {
   padding-bottom: 0;
   margin: 60px 0 -10px;
 }
-/* line 563, sass/style.scss */
+/* line 567, sass/style.scss */
 .resume .education h3 {
   color: #2c3e50;
   display: block;
 }
-/* line 568, sass/style.scss */
+/* line 572, sass/style.scss */
 .resume .education h4 {
   padding-top: 30px;
   margin-bottom: -5px;
 }
-/* line 573, sass/style.scss */
+/* line 577, sass/style.scss */
 .resume .education p {
   padding: 0;
   margin: 10px 0 -10px 0;
 }
-/* line 580, sass/style.scss */
+/* line 584, sass/style.scss */
 .resume .interests h1 {
   padding-bottom: 0;
   margin: 60px 0 30px;
 }
-/* line 585, sass/style.scss */
+/* line 589, sass/style.scss */
 .resume .interests li {
   font-size: 16px;
   font-size: 16/strip-units(16px)rem;
@@ -653,7 +659,7 @@ p {
   color: #2c3e50;
 }
 @media screen and (min-width: 980px) {
-  /* line 585, sass/style.scss */
+  /* line 589, sass/style.scss */
   .resume .interests li {
     font-size: 20px;
     font-size: 20/strip-units(16px)rem;
