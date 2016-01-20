@@ -603,7 +603,7 @@ p {
 }
 /* line 535, sass/style.scss */
 .resume .languages h1 {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 /* line 539, sass/style.scss */
 .resume .languages h3 {
@@ -618,7 +618,7 @@ p {
 /* line 551, sass/style.scss */
 .resume .awards h1 {
   padding-bottom: 0;
-  margin: 40px 0 -10px;
+  margin: 60px 0 -10px;
 }
 /* line 556, sass/style.scss */
 .resume .awards h4 {
@@ -633,7 +633,7 @@ p {
 /* line 568, sass/style.scss */
 .resume .education h1 {
   padding-bottom: 0;
-  margin: 60px 0 -10px;
+  margin: 80px 0 -10px;
 }
 /* line 573, sass/style.scss */
 .resume .education h3 {
@@ -670,4 +670,18 @@ p {
     font-size: 20/strip-units(16px)rem;
     line-height: 28px;
   }
+}
+/* line 610, sass/style.scss */
+.resume .skills h1 {
+  margin-top: 90px;
+}
+/* line 614, sass/style.scss */
+.resume .skills h3 {
+  margin: 0;
+  padding: 0;
+}
+/* line 619, sass/style.scss */
+.resume .skills p {
+  margin: 0;
+  padding: 0 0 20px;
 }
